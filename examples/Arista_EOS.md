@@ -16,6 +16,10 @@ service routing protocols model multi-agent
 
 ip routing ipv6 interfaces
 
+interface Ethernet1
+   no switchport
+   ipv6 address 2001:7f8:19:6::1:1/64
+
 interface Loopback0
    ip address 10.0.0.1/32
 
@@ -75,7 +79,7 @@ BGP routing table entry for 10.1.2.0/24
 Yes:
 
 ```
-# sh ip route 10.1.2.0 detail
+# sh ip route 10.1.2.0
 
  B E      10.1.2.0/24 [20/0]
            via 2001:7f8:19:6::2:1, Ethernet1
