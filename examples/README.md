@@ -18,3 +18,7 @@ Put config examples for different platforms and routing daemons in this director
    - Blackholing?
    - Turn down session as a fail safe?
    - Other misconfiguration cases?
+ * What happens if peer sets an IPv4 address on the peering interface?
+   - Will the next-hops still be IPv6?
+   - Will traceroutes now use this address instead of a loopback?
+   - Could ISPs set up a /32 address on the interface to have a specific name show up in traceroutes?
