@@ -1,5 +1,9 @@
 # Cisco IOS XR
 
+## Minimum Software Version
+
+Presumably minimum version is IOS-XR 7.3.3 ([3rd-party source](https://www.ausnog.net/sites/default/files/ausnog-2022/presentations/ausnog_2022-day2-07-cooper_lees-who_needs_arp_v4_via_v6.pdf)).
+
 ## Configuration
 
 ```
