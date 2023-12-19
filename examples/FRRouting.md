@@ -9,6 +9,8 @@ The [documentation](https://docs.frrouting.org/en/latest/bgp.html#clicmd-neighbo
 The minimum FRRouting version to support RFC5549 is 7.0.0. This version introduced the `extended-nexthop` term.
 We are running the test with FRRouting 8.2.0.
 
+Minimum Linux kernel version to support RFC5549 is [Linux 5.2](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=d15662682db232da77136cd348f4c9df312ca6f9).
+
 ## Configuration
 
 Configuration for route-server:
