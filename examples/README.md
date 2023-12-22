@@ -9,8 +9,10 @@ Put config examples for different platforms and routing daemons in this director
 | Arista | EOS | 4.22.1F | Some support already in 4.17 |
 | Cisco | IOS XR | [7.3.3](https://www.ausnog.net/sites/default/files/ausnog-2022/presentations/ausnog_2022-day2-07-cooper_lees-who_needs_arp_v4_via_v6.pdf) | 
 | CZNIC  | Bird     | 2.14             |       |
-| NetDEF  | FRR      | 7.0.0 | Linux kernel version 5.2 required |
 | Juniper | Junos | 17.3R1 | |
+| Mikrotik | ROS | not supported | |
+| NetDEF  | FRR      | 7.0.0 | Linux kernel version 5.2 required |
+| RSSF | OpenBGPd | not supported | on the roadmap |
 
 ## Check List for Testing
 
