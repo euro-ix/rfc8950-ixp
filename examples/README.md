@@ -12,7 +12,7 @@ Put config examples for different platforms and routing daemons in this director
 | Cisco | NX-OS | ? | to be tested |
 | CZNIC  | Bird     | 2.0.8  | RIB-only since 2.0.0; Linux kernel version 5.2 required |
 | Exa | ExaBGP | 4.1.0 | Cannot program Linux netlinks for RFC5549 |
-| Extreme Networks | IronWare | not supported | verified with vendor |
+| Extreme Networks | IronWare, SLX-OS | not supported | verified with vendor |
 | Juniper | Junos | 17.3R1 | |
 | Mikrotik | ROS | [not supported](https://help.mikrotik.com/docs/display/ROS/Routing+Protocol+Overview) | |
 | NetDEF  | FRR      | 7.0.0 | Linux kernel version 5.2 required |
