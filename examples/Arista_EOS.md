@@ -116,4 +116,8 @@ IPv6 Interfaces Forwarding : None
 IPv6 Interfaces Forwarding : True
 ```
 
+### What happens if peer sets an IPv4 address on the peering interface?
 
+When an IPv4 address is configured on the IXP facing interface, this IP address is used in traceroutes.
+
+Arista only supports /31 or larger IPv4 addresses to be assigned to ethernet interfaces. Alternatively IP unnumbered might be configured referring to an IP address on some other loopback interface. The next-hop remains IPv6 in the FIB.
