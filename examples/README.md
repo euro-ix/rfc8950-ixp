@@ -18,7 +18,7 @@ Put config examples for different platforms and routing daemons in this director
 | NetDEF  | FRR      | 7.0.0 | Linux kernel version 5.2 required |
 | Nokia | SR-OS | [19.5.R1](https://documentation.nokia.com/cgi-bin/dbaccessfilename.cgi/3HE17292AAACTQZZA01_V1_7450%20ESS%207750%20SR%207950%20XRS%20MD-CLI%20Advanced%20Configuration%20Guide%20for%20Releases%20up%20to%2021.10.R3.pdf) | to be tested|
 | Nokia | SR Linux | 20.06 | to be tested |
-| OSRG | GoBGP | supported for several years | to be tested |
+| OSRG | GoBGP | supported for several years | no FIB integration tested |
 | RSSF | OpenBGPd | not supported | on the [roadmap](https://www.rssf.nl/roadmap) |
 
 ## Check List for Testing
