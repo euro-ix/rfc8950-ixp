@@ -34,6 +34,8 @@ Put config examples for different platforms and routing daemons in this director
  * Are the routes getting accepted?
  * Is next-hop address resolution working?
  * What does traceroute look like?
+ * How do you add route filters for IPv4?
+   - Is it possible to add a separate route filter for IPv4 and IPv6 routes?
  * What happens if peer is not configured to use RFC8950 next hops?
    - Errors? Warnings? Alerts?
    - Blackholing?
