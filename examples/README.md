@@ -21,6 +21,7 @@ Put config examples for different platforms and routing daemons in this director
 | OSRG | GoBGP | supported for several years | no FIB integration tested |
 | RSSF | OpenBGPd | not supported | on the [roadmap](https://www.rssf.nl/roadmap) |
 | Edgecore | OCNOS | not supported in 1.3.8 | Awaiting further comment from OCNOS developers |
+| Vyatta | VyOS | ?? | See FRR above ||
 
 ## Check List for Testing
 
