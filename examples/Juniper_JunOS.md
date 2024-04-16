@@ -124,6 +124,8 @@ IPv6 Address                            Linklayer Address  State       Exp   Rtr
 
 The router is visible with its loopback interface IPv4 address.
 
+If an IPv4 address is configured on the interface, this address will be used in traceroutes.
+
 ### What happens if peer is not configured to use RFC8950 next hops?
 
 If extended next-hop cannot be negotiated, neither IPv4 routes can be received not advertised. Status can be checked:
