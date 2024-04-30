@@ -197,3 +197,12 @@ No. of Neighbor Entries: 2
 
 ### What does traceroute look like?
 To be tested.
+
+### What happens if peer is not configured to use RFC8950 next hops?
+To be tested.
+
+### How do you add route filters for IPv4?
+To be tested.
+
+### What happens if peer sets an IPv4 address on the peering interface?
+To be tested.
