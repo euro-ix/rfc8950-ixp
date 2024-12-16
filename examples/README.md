@@ -14,7 +14,7 @@ Put config examples for different platforms and routing daemons in this director
 | Exa | ExaBGP | 4.1.0 | Cannot program Linux netlinks for RFC5549 |
 | Extreme Networks | IronWare, SLX-OS | not supported | verified with vendor |
 | Juniper | Junos | 17.3R1 | |
-| Mikrotik | ROS | [not supported](https://help.mikrotik.com/docs/display/ROS/Routing+Protocol+Overview) | |
+| Mikrotik | ROS | [not supported](https://help.mikrotik.com/docs/display/ROS/Routing+Protocol+Overview) | (last checked: 7.18) |
 | NetDEF  | FRR      | 7.0.0 | Linux kernel version 5.2 required |
 | Nokia | SR-OS | 20.2.R1 | |
 | Nokia | SR Linux | 20.06 | to be tested |
