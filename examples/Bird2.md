@@ -27,15 +27,17 @@ zsh% birdc show route protocol EXAMPLE
 Table master4:
 192.0.2.0/24  unicast [EXAMPLE 2024-12-12] * (100) [AS65533i]
   via 2001:db8:3::2 on eth0
-zsh% ip -4 route show 
+zsh% ip route show 192.0.2.0/24
+192.0.2.0/24 via inet6 2001:db8:3::2 dev eth0 proto bird metric 32
 ```
-unfinished
 
 ### Is the next-hop address resolution working?
-
+yes
 
 ### What does traceroute look like?
-
+The Linux router will use an IPv4 address to respond to traceroute in the following order:
+ * if the outgoing interface (for the response) has an IPv4 address, use that
+ * use any other interface has an IPv4 address, use that
 
 ### What happens if peer is not configured to use RFC8950 next hops?
 
