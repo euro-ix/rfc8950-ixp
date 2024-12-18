@@ -42,3 +42,9 @@ The Linux router will use an IPv4 address to respond to traceroute in the follow
 ### What happens if peer is not configured to use RFC8950 next hops?
 
 **Not tested yet**
+
+### Route filtering?
+
+You can specify separate filters per channel (e.g. ipv4 or ipv6).
+The config example above only has the ipv4 channel defined and
+it has the "all" filter defined for both import and export.
