@@ -85,7 +85,7 @@ Routing entry for 10.100.100.0/24
 
 ### What does traceroute look like?
 
-The route-server will not be visible in the traceroute output from peers, because it is not in the forwarding path.
+untested (how would a FRR/linux or FRR/BSD router react)
 
 ### What happens if peer is not configured to use RFC8950 next hops?
 
