@@ -62,7 +62,7 @@ protocols {
 There are four important lines:
 
 1. `interfaces X unit Y family inet` needs to be enabled to allow IPv4 forwarding on an interface.
-2. At least one (loopback) interface with an IPv4 address. This address will be used for answering ICMP unreachables or during traceroutes.
+2. At least one (loopback) interface with an IPv4 address. This address will be used for answering ICMP unreachables or during traceroutes.(*)
 3. `policy-statement nh-self then next-hop self` should be default for IXP connection, but it's even more important here.
 4. `protocols bgp group X family inet unicast extended-nexthop` needs to be enabled to negotiate the capability.
 
@@ -123,6 +123,8 @@ IPv6 Address                            Linklayer Address  State       Exp   Rtr
 ### What does traceroute look like?
 
 The router is visible with its loopback interface IPv4 address.
+
+(*) Addendum: Axu tried this on MX240 and JunOS 23.4R2-S2. The router chose a random interface rather than `lo0.1` (which was a member of the testing VRF) until he set an IPv4 address on the peering interface.
 
 If an IPv4 address is configured on the interface, this address will be used in traceroutes.
 
