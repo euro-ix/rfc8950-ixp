@@ -4,21 +4,22 @@ Put config examples for different platforms and routing daemons in this director
 
 ## Findings So Far
 
+Links in the **Platform** column go to config examples for that platform.
 | Vendor | Platform | Software Version | Notes |
 | ------ | -------- | ---------------- | ----- |
-| Arista | EOS | 4.22.1F | Some support already in 4.17 |
+| Arista | [EOS](Arista_EOS.md) | 4.22.1F | Some support already in 4.17 |
 | Cisco | IOS XE | not supported | IPv6 next hop support for VPN routes since 17.8.1 |
-| Cisco | IOS XR | [7.3.3](https://www.ausnog.net/sites/default/files/ausnog-2022/presentations/ausnog_2022-day2-07-cooper_lees-who_needs_arp_v4_via_v6.pdf) | |
+| Cisco | [IOS XR](Cisco_IOSXR.md) | [7.3.3](https://www.ausnog.net/sites/default/files/ausnog-2022/presentations/ausnog_2022-day2-07-cooper_lees-who_needs_arp_v4_via_v6.pdf) | |
 | Cisco | NX-OS | ? | to be tested |
-| CZNIC  | Bird     | 2.0.8  | RIB-only since 2.0.0; Linux kernel version 5.2 required |
+| CZNIC  | [Bird](Bird2.md)     | 2.0.8  | RIB-only since 2.0.0; Linux kernel version 5.2 required |
 | Exa | ExaBGP | 4.1.0 | Cannot program Linux netlinks for RFC5549 |
 | Extreme Networks | IronWare, SLX-OS | not supported | verified with vendor |
-| Juniper | Junos | 17.3R1 | |
+| Juniper | [Junos](Juniper_JunOS.md) | 17.3R1 | |
 | Mikrotik | ROS | [not supported](https://help.mikrotik.com/docs/display/ROS/Routing+Protocol+Overview) | (last checked: 7.18) |
-| NetDEF  | FRR      | 7.0.0 | Linux kernel version 5.2 required |
-| Nokia | SR-OS | 20.2.R1 | |
+| NetDEF  | [FRR](FRRouting.md)  | 7.0.0 | Linux kernel version 5.2 required |
+| Nokia | [SR-OS](Nokia_SROS.md) | 20.2.R1 | |
 | Nokia | SR Linux | 20.06 | to be tested |
-| OSRG | GoBGP | supported for several years | no FIB integration tested |
+| OSRG | [GoBGP](GoBGP.md) | supported for several years | no FIB integration tested |
 | RSSF | OpenBGPd | not supported | on the [roadmap](https://www.rssf.nl/roadmap) |
 | Edgecore | OCNOS | not supported in 1.3.8 | Awaiting further comment from OCNOS developers |
 | Vyatta | VyOS | 1.2.2 | See FRR above ||
