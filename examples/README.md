@@ -18,7 +18,7 @@ Links in the **Platform** column go to config examples for that platform.
 | Mikrotik | ROS | [not supported](https://help.mikrotik.com/docs/display/ROS/Routing+Protocol+Overview) | (last checked: 7.18) |
 | NetDEF  | [FRR](FRRouting.md)  | 7.0.0 | Linux kernel version 5.2 required |
 | Nokia | [SR-OS](Nokia_SROS.md) | 20.2.R1 | |
-| Nokia | SR Linux | 20.06 | tested on 22.6.4 |
+| Nokia | [SR Linux](Nokia_SR-Linux.md) | 20.06 | tested on 22.6.4 |
 | OSRG | [GoBGP](GoBGP.md) | supported for several years | no FIB integration tested |
 | RSSF | OpenBGPd | not supported | on the [roadmap](https://www.rssf.nl/roadmap) |
 | Edgecore | OCNOS | not supported in 1.3.8 | Awaiting further comment from OCNOS developers |
