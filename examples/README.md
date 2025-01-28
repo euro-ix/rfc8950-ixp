@@ -11,7 +11,9 @@ Links in the **Platform** column go to config examples for that platform.
 | Cisco | IOS XE | not supported | IPv6 next hop support for VPN routes since 17.8.1 |
 | Cisco | [IOS XR](Cisco_IOSXR.md) | [7.3.3](https://www.ausnog.net/sites/default/files/ausnog-2022/presentations/ausnog_2022-day2-07-cooper_lees-who_needs_arp_v4_via_v6.pdf) | |
 | Cisco | NX-OS | ? | to be tested |
-| CZNIC  | [Bird](Bird2.md)     | 2.0.8  | RIB-only since 2.0.0; Linux kernel version 5.2 required |
+| CZNIC  | Bird1     | not supported | Bird1 does not and will not support RFC8950 |
+| CZNIC  | [Bird2](Bird2.md)     | 2.0.8  | RIB-only since 2.0.0; Linux kernel version 5.2 required |
+| CZNIC  | [Bird3](Bird2.md)     | 3.0.0  | Bird3 config wrt RFC8950 settings is identical to Bird2 |
 | Exa | ExaBGP | 4.1.0 | Cannot program Linux netlinks for RFC5549 |
 | Extreme Networks | IronWare, SLX-OS | not supported | verified with vendor |
 | Juniper | [Junos](Juniper_JunOS.md) | 17.3R1 | |
