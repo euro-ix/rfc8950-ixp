@@ -3,6 +3,7 @@
 ## Minimum Software Version
 
 The minimum JunOS version to support RFC5549 is 17.3R1. This version introduced the `extended-nexthop` term.
+JunOS before 21.1R1 seems to have [issues with 32 bit next-hop](https://github.com/gacybercenter/kinetic/issues/78) (global + link-local).
 
 TODO: The [documentation](https://www.juniper.net/documentation/us/en/software/junos/bgp/topics/topic-map/multiprotocol-bgp.html#id-understanding-redistribution-of-ipv4-routes-with-ipv6-next-hop-into-bgp) talks about `dynamic-tunnel`. We do not need this, but it remains to be determined which JunOS version supports untunneled IPv4 with IPv6 next-hop.
 
