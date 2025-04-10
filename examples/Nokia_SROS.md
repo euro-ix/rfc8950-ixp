@@ -7,6 +7,7 @@ RFC8950 compliant functionalities have successfully been tested with Nokia SR OS
 ## Configuration
 
 ```
+configure {
     policy-options {
         prefix-list "Match1" {
             prefix 1.1.1.1/32 type exact {
@@ -110,6 +111,7 @@ RFC8950 compliant functionalities have successfully been tested with Nokia SR OS
             }
         }
     }
+}
 ```
 
 There are three important lines:
