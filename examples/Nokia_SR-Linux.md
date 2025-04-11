@@ -1,4 +1,4 @@
-# Juniper JunOS
+# Nokia SR-Linux
 
 ## Minimum Software Version
 
