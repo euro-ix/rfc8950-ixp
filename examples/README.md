@@ -7,6 +7,7 @@ Put config examples for different platforms and routing daemons in this director
 Links in the **Platform** column go to config examples for that platform.
 | Vendor | Platform | Software Version | Notes |
 | ------ | -------- | ---------------- | ----- |
+| RtBrick | [RBFS](RtBrick_RBFS.md) | All versions | Full support |
 | Arista | [EOS](Arista_EOS.md) | 4.22.1F | Some support already in 4.17 |
 | Cisco | IOS XE | not supported | IPv6 next hop support for VPN routes since 17.8.1 |
 | Cisco | [IOS XR](Cisco_IOSXR.md) | [7.3.3](https://www.ausnog.net/sites/default/files/ausnog-2022/presentations/ausnog_2022-day2-07-cooper_lees-who_needs_arp_v4_via_v6.pdf) | |
