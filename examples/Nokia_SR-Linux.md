@@ -57,10 +57,12 @@ network-instance default {
                 export-policy Announce-Clients
                 import-policy AcceptAny
                 peer-as 65254
-                ipv4-unicast {
-                    advertise-ipv6-next-hops true
-                    receive-ipv6-next-hops true
+                afi-safi ipv4-unicast {
                     admin-state enable
+                    ipv4-unicast {
+                        advertise-ipv6-next-hops true
+                        receive-ipv6-next-hops true
+                    }
                 }
             }
             neighbor 2001:db8::254 {
