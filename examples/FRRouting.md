@@ -44,6 +44,8 @@ router bgp 133339
 exit
 ```
 
+IPv6 GUA/LLA next-hop preference can be configured by setting `set ipv6 next-hop prefer-global` within `route-map y` of `neighbor x route-map y in`.
+
 Important lines are:
 
 1. `capability extended-nexthop` - this is not default in this case!
