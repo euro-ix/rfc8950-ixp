@@ -8,9 +8,12 @@ Presumably minimum version is IOS-XR 7.3.3 ([3rd-party source](https://www.ausno
 
 ```
 interface GigabitEthernet 0/1/1
+  ipv4 forwarding-enable
   ipv6 address 2001:db8:1::1/126
 
 router bgp 64500
+    bgp router-id 192.0.1.1
+    address-family ipv4 unicast
     neighbor 2001:db8:1::2
         remote-as 64496
         description Example
@@ -41,6 +44,8 @@ router bgp 64500
 Important lines are:
 
 1. `next-hop-self` - this is not default in this case!
+2. `ipv4 forwarding-enable` - to allow forwarding of IPv4 packets on IPv6-only interfaces. Otherwise they will be silently dropped.
+3. `address-family ipv4 unicast` - otherwise the neighbors will fail to be activated, even if no networks are configured to be exported.
 
 ## Testing
 
@@ -72,5 +77,4 @@ Routing entry for 192.0.2.0/24
       Route metric is 0
   No advertising protos.
 ```
-
 
