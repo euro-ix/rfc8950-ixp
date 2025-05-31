@@ -17,6 +17,7 @@ protocol bgp EXAMPLE {
   }
 }
 ```
+IPv6 GUA/LLA next-hop preference can be configured by setting `next hop prefer global` within a channel.
 
 ## Testing
 ### Are the routes getting accepted and installed?
