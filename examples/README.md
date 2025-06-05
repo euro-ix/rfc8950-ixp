@@ -7,7 +7,6 @@ Put config examples for different platforms and routing daemons in this director
 Links in the **Platform** column go to config examples for that platform.
 | Vendor | Platform | Software Version | Notes |
 | ------ | -------- | ---------------- | ----- |
-| RtBrick | [RBFS](RtBrick_RBFS.md) | All versions | Full support |
 | Arista | [EOS](Arista_EOS.md) | 4.22.1F | Some support already in 4.17 |
 | Cisco | IOS XE | not supported | IPv6 next hop support for VPN routes since 17.8.1 |
 | Cisco | [IOS XR](Cisco_IOSXR.md) | [7.3.3](https://www.ausnog.net/sites/default/files/ausnog-2022/presentations/ausnog_2022-day2-07-cooper_lees-who_needs_arp_v4_via_v6.pdf) | |
@@ -15,6 +14,7 @@ Links in the **Platform** column go to config examples for that platform.
 | CZNIC  | Bird1     | not supported | Bird1 does not and will not support RFC8950 |
 | CZNIC  | [Bird2](Bird2.md)     | 2.0.8  | RIB-only since 2.0.0; Linux kernel version 5.2 required |
 | CZNIC  | [Bird3](Bird2.md)     | 3.0.0  | Bird3 config wrt RFC8950 settings is identical to Bird2 |
+| Edgecore | OCNOS | not supported in 1.3.8 | Awaiting further comment from OCNOS developers |
 | Exa | ExaBGP | 4.1.0 | Cannot program Linux netlinks for RFC5549 |
 | Extreme Networks | IronWare, SLX-OS | not supported | verified with vendor |
 | Juniper | [Junos](Juniper_JunOS.md) | 17.3R1 | |
@@ -24,7 +24,7 @@ Links in the **Platform** column go to config examples for that platform.
 | Nokia | [SR Linux](Nokia_SR-Linux.md) | 20.06 | tested on 22.6.4 |
 | OSRG | [GoBGP](GoBGP.md) | supported for several years | no FIB integration tested |
 | RSSF | OpenBGPd | not supported | on the [roadmap](https://www.rssf.nl/roadmap) |
-| Edgecore | OCNOS | not supported in 1.3.8 | Awaiting further comment from OCNOS developers |
+| RtBrick | [RBFS](RtBrick_RBFS.md) | All versions | Full support |
 | Vyatta | VyOS | 1.2.2 | See FRR above ||
 
 ## Check List for Testing
