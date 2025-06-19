@@ -42,7 +42,7 @@ router bgp 65001
 
 There are four important lines:
 
-1. `ip routing ipv6 interfaces` to enable IPv4 forwarding on non-IPv4 interfaces.
+1. `ip routing ipv6 interfaces` to enable IPv4 forwarding on non-IPv4 interfaces. This can also be achieved by setting `ip routing address required disabled` on a per-interface level.
 2. At least one (loopback) interface with an IPv4 address within the VRF. This address will be used for answering ICMP unreachables or during traceroutes.
 3. `neighbor peer next-hop-self` should be default for IXP connection, but it's even more important here.
 4. `neighbor peer next-hop address-family ipv6 originate` to enable extended next-hop facility and to also send out IPv4 routes with IPv6 next-hop.
