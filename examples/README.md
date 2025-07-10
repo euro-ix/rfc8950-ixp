@@ -23,7 +23,7 @@ Links in the **Platform** column go to config examples for that platform.
 | Nokia | [SR-OS](Nokia_SROS.md) | 20.2.R1 | |
 | Nokia | [SR Linux](Nokia_SR-Linux.md) | 20.06 | tested on 22.6.4 |
 | OSRG | [GoBGP](GoBGP.md) | supported for several years | no FIB integration tested |
-| RSSF | OpenBGPd | [8.8](https://www.rssf.nl/post/openbgpd-8-8-released) | RIB-only, to be tested |
+| RSSF | [OpenBGPD](OpenBGPD.md) | [8.8](https://www.rssf.nl/post/openbgpd-8-8-released) | RIB-only |
 | RtBrick | [RBFS](RtBrick_RBFS.md) | All versions | Full support |
 | Vyatta | VyOS | 1.2.2 | See FRR above ||
 
