@@ -17,7 +17,7 @@ Links in the **Platform** column go to config examples for that platform.
 | Edgecore | OCNOS | not supported in 1.3.8 | Awaiting further comment from OCNOS developers |
 | Exa | ExaBGP | 4.1.0 | Cannot program Linux netlinks for RFC5549 |
 | Extreme Networks | IronWare, SLX-OS | not supported | verified with vendor |
-| Juniper | [Junos](Juniper_JunOS.md) | 17.3R1 | |
+| Juniper | [Junos](Juniper_JunOS.md) | 21.2 | some support already in 17.3R1 |
 | Mikrotik | ROS | [7.20](https://help.mikrotik.com/docs/display/ROS/Routing+Protocol+Overview) | Support promised in near future |
 | NetDEF  | [FRR](FRRouting.md)  | 7.0.0 | Linux kernel version 5.2 required |
 | Nokia | [SR-OS](Nokia_SROS.md) | 20.2.R1 | |
