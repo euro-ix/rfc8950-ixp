@@ -1,11 +1,14 @@
 # OpenBGPD
 
-OpenBGPD supports RFC8950, but only installs routes for IPv4 prefixes with a IPv6 next-hop into the RIB, not the FIB ([at least yet](https://github.com/openbgpd-portable/openbgpd-openbsd/commit/f9365c08c05927510280d3b077392615c5b96026)).  
+## Known Issues
+OpenBGPD supports RFC8950, but only installs routes for IPv4 prefixes with a IPv6 next-hop into the RIB, not the FIB ([at least yet](https://github.com/openbgpd-portable/openbgpd-openbsd/commit/f9365c08c05927510280d3b077392615c5b96026)).
+
 This is probably due to a limitation of *BSD based operating systems, as Linux supports this since version 5.2.
 
 ## Minimum Software Version
 ### Supported since
-[8.8](https://www.openbsd.org/plus77.html)  
+[8.8](https://www.openbsd.org/plus77.html)
+
 ### Tested with
 8.8
 
@@ -47,5 +50,25 @@ From [bgpd.conf(5)](https://man.openbsd.org/bgpd.conf.5):
 If set to **yes**, the extended nexthop encoding capability is announced. If negotiated, **IPv4 unicast** and **vpn** sessions can send paths with a IPv6 nexthop. If **enforce** is set, the session will only be established if the neighbor also announces the capability. The default is **no**.
 
 ## Testing
+### Are the routes getting accepted?
+Yes.
 
+Example:
+tba
+
+### Is next-hop address resolution working?
+Yes.
+
+Example:
+tba
+
+### What does traceroute look like?
+Since the routes are not getting installed into the FIB, no routing can take place. Therefore the router cannot be visible with an IP address (see [Kown Issues](#known-issues)).
+
+Additionally, this behaviour seems to be dependent on the underlying operating system anyways.
+
+### What happens if peer is not configured to use RFC8950 next hops?
+tba
+
+### What happens if peer sets an IPv4 address on the peering interface?
 tba
