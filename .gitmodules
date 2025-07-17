@@ -1,0 +1,3 @@
+[submodule "rfc8950-clab"]
+	path = rfc8950-clab
+	url = https://github.com/moritzbeck13/rfc8950-clab
