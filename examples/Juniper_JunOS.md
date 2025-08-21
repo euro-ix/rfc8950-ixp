@@ -141,3 +141,11 @@ If extended next-hop cannot be negotiated, neither IPv4 routes can be received n
 ```
 
 In case `family inet` is not enabled on the interface connecting the IPv6 next-hop, the routes are being accepted and visible in the FIB, but not forwarded, i.e. blackholed.
+
+#### Observed Behaviour
+
+Junos 23.4R2-S2.1 with enhanced next-hops talking to an anycast service provider with an unidentified Linux routing daemon, that hadn't configured enhanced next-hops yet:
+```
+Jul 31 03:37:22  betty rpd[14040]: bgp_read_v4_update:14717: NOTIFICATION sent to 2001:7f8:1d:4::a79d:1 (External AS 42909): code 3 (Update Message Error) subcode 9 (error with optional attribute), Reason: peer 2001:7f8:1d:4::a79d:1 (External AS 42909) UPDATE - NLRI inet-unicast not negotiated
+Jul 31 03:37:22  betty rpd[14040]: Received malformed update from 2001:7f8:1d:4::a79d:1 (External AS 42909)
+```
