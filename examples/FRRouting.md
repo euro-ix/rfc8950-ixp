@@ -9,6 +9,8 @@ The [documentation](https://docs.frrouting.org/en/latest/bgp.html#clicmd-neighbo
 The minimum FRRouting version to support RFC5549 is 7.0.0. This version introduced the `extended-nexthop` term.
 We are running the test with FRRouting 8.2.0.
 
+Until FRRouting 9.1.3 FRR will send router advertisements if `extended-nexthop` is enabled. This should be avoided in the IXP context.
+
 Minimum Linux kernel version to support RFC5549 is [Linux 5.2](https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=d15662682db232da77136cd348f4c9df312ca6f9).
 
 ## Configuration
@@ -21,6 +23,8 @@ router bgp 133339
  neighbor 2400:9c80:0:171::2 remote-as 100
  neighbor 2400:9c80:0:171::2 description Example-AS100
  neighbor 2400:9c80:0:171::2 capability extended-nexthop
+ ! from FRR 9.1.3, disable router advertisements
+ no bgp ipv6-auto-ra
  !
  address-family ipv4 unicast
   neighbor 2400:9c80:0:171::2 activate
@@ -49,6 +53,7 @@ IPv6 GUA/LLA next-hop preference can be configured by setting `set ipv6 next-hop
 Important lines are:
 
 1. `capability extended-nexthop` - this is not default in this case!
+2. `no bgp ipv6-auto-ra` - do not send router advertisements towards an IXP
 
 ## Testing
 
