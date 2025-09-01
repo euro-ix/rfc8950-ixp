@@ -19,13 +19,13 @@ Links in the **Platform** column go to config examples for that platform.
 | Extreme Networks | IronWare, SLX-OS | not supported | verified with vendor |
 | Juniper | [Junos](Juniper_JunOS.md) | 21.2 | some support already in 17.3R1 |
 | Mikrotik | [RouterOS](Mikrotik.md) | [7.20](https://help.mikrotik.com/docs/display/ROS/Routing+Protocol+Overview) | Introduced in [7.20beta5](https://mikrotik.com/download/changelogs#c-testing-v7_20beta5) |
-| NetDEF  | [FRR](FRRouting.md)  | 7.0.0 | Linux kernel version 5.2 required, version 9.1.3 recommended |
+| NetDEF  | [FRR](FRRouting.md)  | 7.0.0 | Linux kernel version 5.2 required <br/>version 9.1.3 recommended |
 | Nokia | [SR-OS](Nokia_SROS.md) | 20.2.R1 | |
 | Nokia | [SR Linux](Nokia_SR-Linux.md) | 20.06 | tested on 22.6.4 |
 | OSRG | [GoBGP](GoBGP.md) | supported for several years | no FIB integration tested |
 | RSSF | [OpenBGPD](OpenBGPD.md) | [8.8](https://www.rssf.nl/post/openbgpd-8-8-released) | RIB-only |
 | RtBrick | [RBFS](RtBrick_RBFS.md) | All versions | Full support |
-| Vyatta | VyOS | 1.2.2 | See FRR above, version 1.4.3+ recommended ||
+| Vyatta | VyOS | 1.2.2 | See FRR above <br/>version 1.4.3+ recommended ||
 
 ## Check List for Testing
 
