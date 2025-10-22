@@ -47,6 +47,8 @@ There are four important lines:
 3. `neighbor peer next-hop-self` should be default for IXP connection, but it's even more important here.
 4. `neighbor peer next-hop address-family ipv6 originate` to enable extended next-hop facility and to also send out IPv4 routes with IPv6 next-hop.
 
+If you want to do RFC8950 in VRFs, you need to enable IPv4 forwarding in each VRF with `ip routing ipv6 interfaces vrf <vrf>` separately.
+
 ## Testing
 
 ### Are the routes getting accepted?
