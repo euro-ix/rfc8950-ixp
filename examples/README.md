@@ -17,7 +17,7 @@ Links in the **Platform** column go to config examples for that platform.
 | Edgecore | OCNOS | not supported in 1.3.8 | Awaiting further comment from OCNOS developers |
 | Exa | ExaBGP | 4.1.0 | Cannot program Linux netlinks for RFC5549 |
 | Extreme Networks | IronWare, SLX-OS | not supported | verified with vendor |
-| Huawei | VRP | 8.240 (partial) | Tested with NE 8000 V800R024, no FIB yet |
+| Huawei | [VRP](Huawei_VRP.md) | 8.240 (partial) | Tested with NE 8000 V800R024, no FIB yet |
 | Juniper | [Junos](Juniper_JunOS.md) | 21.2 | some support already in 17.3R1 |
 | Mikrotik | [RouterOS](Mikrotik.md) | [7.20](https://help.mikrotik.com/docs/display/ROS/Routing+Protocol+Overview) | Introduced in [7.20beta5](https://mikrotik.com/download/changelogs#c-testing-v7_20beta5) |
 | NetDEF  | [FRR](FRRouting.md)  | 7.0.0 | Linux kernel version 5.2 required <br/>version 9.1.3 recommended |
