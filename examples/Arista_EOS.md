@@ -1,13 +1,14 @@
 # Arista EOS
 
 Arista EOS supports [IPv4 addressless forwarding](https://www.arista.com/en/support/toi/eos-4-17-0f/13784-ip-addressless-forwarding-changes-for-bgp-v6-nexthop-for-v4-routes) 
-as well as [RFC 5549](https://www.arista.com/en/support/toi/eos-4-23-2f/14436-rfc-5549-ipv4-unicast-nlri-with-ipv6-next-hop-support) 
-BGP signalling.
+as well as [RFC 5549](https://www.arista.com/en/support/toi/eos-4-23-2f/14436-rfc-5549-ipv4-unicast-nlri-with-ipv6-next-hop-support) and 
+[RFC 8950](https://www.arista.com/en/support/toi/eos-4-34-2f/22048-rfc-8950-vpn-ipv4-nlri-with-ipv6-next-hop-support) BGP signalling.
 
 ## Minimum Software Version
 
 Arista EOS comes with two different BGP implementation: ribd and multi-agent. While ribd has support for RFC5549 since EOS 4.17.x,
 multi-agent was enhanced to support it from EOS 4.22.1F onwards. Multi-agent model is default nowadays, so it recommended to use it.
+RFC8950 support was added with EOS 4.34.2F.
 
 ## Configuration
 
